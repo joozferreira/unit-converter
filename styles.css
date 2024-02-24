@@ -39,14 +39,15 @@ header {
   background-color: transparent;
   color: #ffffff;
   padding: 10px 15px;
-  height: 15vh;
-  width: 15vh;
-  font-size: 3em;
+  height: 10vh;
+  width: 17ch;
+  font-size: 2.5em;
   font-weight: 700;
   box-shadow: 0px 3px #3d3d3d;
+  text-align: center;
 }
 
-#submit {
+#convert {
   color: var(--btn-text);
   border-radius: 5px;
   padding: 10px 15px;
@@ -65,15 +66,31 @@ main {
 
 section {
   margin-top: 30px;
-  max-width: 75%;
+  width: 450px;
+  min-height: 90px;
+  border-radius: 2px;
   padding: 20px;
   background-color: #ffffff;
 }
 
 h2 {
   font-size: 1em;
+  margin-bottom: 15px;
 }
 
 p {
   font-size: 0.8em;
+}
+
+@media screen and (max-width: 600px) {
+  #quantity {
+    font-size: 1.5em;
+  }
+
+  main {
+    gap: 5px;
+  }
+  section {
+    margin-top: 15px;
+  }
 }
