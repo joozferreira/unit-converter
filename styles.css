@@ -1,7 +1,7 @@
 :root {
   --bg-header: #6943ff;
-  --header-text: #ffffff;
-  --bg-main: #f4f4f4;
+  --header-text: #f1eaea;
+  --bg-main: #e6e2e2;
   --main-text: #353535;
   --btn-text: #3d3d3d;
 }
@@ -15,9 +15,25 @@
 
 body {
   height: 100%;
-  width: 50%;
+  width: 100%;
   background-color: var(--bg-main);
   text-align: center;
+}
+
+nav {
+  background-color: var(--bg-header);
+  padding: 5px 5vw;
+  text-align: right;
+  height: 0;
+}
+
+#mode {
+  aspect-ratio: 1 / 1;
+  height: 25px;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 3px;
 }
 
 header {
@@ -25,7 +41,7 @@ header {
   width: 100vw;
   color: var(--header-text);
   padding: 35px 50px;
-  margin: 0 auto;
+  margin: -15px auto 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -37,7 +53,7 @@ header {
   border: 2px solid #b295ff;
   border-radius: 5px;
   background-color: transparent;
-  color: #ffffff;
+  color: var(--header-text);
   padding: 10px 15px;
   height: 10vh;
   width: 17ch;
@@ -93,4 +109,17 @@ p {
   section {
     margin-top: 15px;
   }
+}
+
+.dark-mode {
+  background-color: #1d0c04d2;
+}
+
+.dark-section {
+  background-color: #dcd0d0;
+}
+
+.svg-color {
+  filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(330deg)
+    brightness(102%) contrast(100%);
 }
