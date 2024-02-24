@@ -24,7 +24,10 @@ quantity.addEventListener("keyup", (event) => {
 convertBtn.addEventListener("click", converter);
 
 function converter() {
-  const input = document.getElementById("quantity").value;
+  let input = document.getElementById("quantity").value;
+  if (input === "") {
+    input = 0;
+  }
   const convertedFeet = (input * 3.2808399).toFixed(3);
   const convertedMeter = (input / 3.2808399).toFixed(3);
   const convertedGallon = (input * 0.264172052).toFixed(3);
