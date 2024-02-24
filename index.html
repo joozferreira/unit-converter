@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Unit Converter</title>
+  </head>
+  <body>
+    <header>
+      <h1>Metric/Imperial Unit Converter</h1>
+      <input type="text" name="quantity" id="quantity" value="20" />
+      <button id="submit">Convert</button>
+    </header>
+    <main>
+      <section class="length">
+        <h2>Length (Meter/Feet)</h2>
+        <p id="length-conversion">
+          20 meters = 65.616 feet | 20 feet = 6.096 meters
+        </p>
+      </section>
+      <section class="volume">
+        <h2>Volume (Liters/Gallons)</h2>
+        <p id="volume-conversion"></p>
+      </section>
+      <section class="mass">
+        <h2>Mass (Kilograms/Pounds)</h2>
+        <p id="mass-conversion"></p>
+      </section>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>
